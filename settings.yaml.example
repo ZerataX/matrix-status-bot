@@ -2,4 +2,6 @@ DOMAIN: "https://matrix.org"
 TOKEN: "access_token"
 ROOMS:
   - "room_id"
-  - "room_id2"
+SERVICES:
+  - "matrix-appservice-discord --user"
+  - "matrix-appservice-telegram"

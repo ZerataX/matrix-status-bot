@@ -1,6 +1,6 @@
 # matrix-status-bot
 
-matrix bot that notifies you when a system services fails.
+matrix bot that notifies you of stopped system services.
 
 ## setup
 ```
@@ -10,9 +10,13 @@ $ pip install requirements.txt -r
 $ cp settings.yaml.example settings.yaml
 ```
 
-Edit settings.yaml to your liking
+Edit settings.yaml
 
-Append to your service you wanted to be notified about:
 ```
-OnFailure=/home/user/matrix-status-bot/bin/python /home/matrix-status-bot/status.py "Service Name"
+$ python status.py
+```
+
+Add a crontab to execute periodically, e.g. for every 5 minutse:
+```
+*/5 * * * * /home/user/matrix-status-bot/bin/python /home/user/matrix-status-bot/status.py
 ```
