@@ -4,20 +4,15 @@ matrix bot that notifies you when a system services fails.
 
 ## setup
 ```
-$ virtualenv <directory>
-$ cd <directory>
+$ virtualenv ENV
 $ source bin/activate
 $ pip install requirements.txt -r
 $ cp settings.yaml.example settings.yaml
 ```
 
-Edit settings.yaml to your liking.
-You can get the access token by executing:
-```
-$ python get_token.py
-```
+Edit settings.yaml to your liking
 
-Append the following line to your service you want to be notified about:
+Append to your service you wanted to be notified about:
 ```
 OnFailure=/home/user/matrix-status-bot/bin/python /home/matrix-status-bot/status.py "Service Name"
 ```
