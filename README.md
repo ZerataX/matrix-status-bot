@@ -17,7 +17,7 @@ You can get the access token by executing:
 $ python get_token.py
 ```
 
-Add a crontab to execute periodically, e.g. for every 5 minutse:
+Add a cronjob to execute the script periodically, e.g. for every 5 minutes:
 ```
-*/5 * * * * /home/user/matrix-status-bot/bin/python /home/user/matrix-status-bot/status.py
+*/5 * * * * <directory>/bin/python <directory>/status.py
 ```
